@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Bethel Group · Royal Prestige en Caucasia y la región</title>
+<meta name="description" content="César Martínez Pico, Bethel Group, distribuidor autorizado Royal Prestige. Sistemas de cocina, electrodomésticos, cuchillos, café y filtración de agua. Agenda tu demostración.">
+<meta name="theme-color" content="#0d2a5c">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="images/icon-192.png">
+<link rel="apple-touch-icon" href="images/icon-192.png">
+<!-- Vista previa al compartir el enlace -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bethel Group · Distribuidor autorizado Royal Prestige">
+<meta property="og:description" content="Cocina sin aceite y casi sin agua. Catálogo completo y demostración a domicilio con César Martínez Pico. WhatsApp 314 524 2632.">
+<meta property="og:image" content="https://bethel-royal-prestige.netlify.app/images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://bethel-royal-prestige.netlify.app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://bethel-royal-prestige.netlify.app/images/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#0d2a5c;--azul2:#16408a;--rojo:#c8102e;--acero:#eef1f5;--txt:#1b2430;--gris:#5c6675;--blanco:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--txt);background:#fafbfc;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.serif{font-family:"Cormorant Garamond",Georgia,serif}
+
+/* barra superior */
+header{position:fixed;inset:0 0 auto 0;z-index:40;display:flex;align-items:center;justify-content:space-between;padding:12px 18px;transition:.35s;color:#fff}
+header.solid{background:rgba(13,42,92,.96);backdrop-filter:blur(8px);box-shadow:0 4px 20px rgba(0,0,0,.15)}
+.marca{line-height:1.05}
+.marca b{display:block;font-size:17px;letter-spacing:.18em}
+.marca small{font-size:10.5px;letter-spacing:.12em;opacity:.85;text-transform:uppercase}
+.lang{display:flex;border:1px solid rgba(255,255,255,.6);border-radius:30px;overflow:hidden}
+.lang button{background:none;border:0;color:#fff;font:600 12px Inter;padding:7px 12px;cursor:pointer}
+.lang button.on{background:#fff;color:var(--azul)}
+
+/* hero */
+.hero{position:relative;height:92vh;min-height:560px;max-height:820px;overflow:hidden;background:#0d2a5c}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.4s}
+.slide.on{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover;transform:scale(1.04)}
+.slide.on img{animation:kb 9s ease-out forwards}
+@keyframes kb{from{transform:scale(1.04) translate(0,0)}to{transform:scale(1.16) translate(-2%,-2%)}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,42,92,.55) 0%,rgba(13,42,92,.1) 35%,rgba(10,20,40,.82) 100%)}
+.hero-txt{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:0 22px 44px;color:#fff;max-width:760px}
+.pill{display:inline-block;background:var(--rojo);color:#fff;font:600 11px Inter;letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border-radius:30px;margin-bottom:14px;animation:pulse 2.4s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(200,16,46,.6)}50%{box-shadow:0 0 0 10px rgba(200,16,46,0)}}
+.hero h1{font-size:clamp(38px,8vw,66px);line-height:.98;font-weight:600}
+.hero p{margin:14px 0 22px;font-size:16px;line-height:1.5;opacity:.95;max-width:520px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:40px;padding:14px 22px;font:600 15px Inter;cursor:pointer;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn:active{transform:scale(.97)}
+.btn.rojo{background:var(--rojo);color:#fff;box-shadow:0 8px 24px rgba(200,16,46,.35)}
+.btn.blanco{background:#fff;color:var(--azul)}
+.btn.borde{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.8)}
+.btn.azul{background:var(--azul);color:#fff}
+.dots{position:absolute;z-index:3;right:20px;bottom:24px;display:flex;gap:6px}
+.dots i{width:22px;height:3px;background:rgba(255,255,255,.4);border-radius:2px}
+.dots i.on{background:#fff}
+
+/* cinta */
+.cinta{background:var(--azul);color:#fff;overflow:hidden;white-space:nowrap;padding:12px 0;font:600 13px Inter;letter-spacing:.08em;text-transform:uppercase}
+.cinta div{display:inline-block;animation:cinta 28s linear infinite}
+.cinta span{margin:0 26px}
+.cinta span:nth-child(odd){color:#ffb3bf}
+@keyframes cinta{to{transform:translateX(-50%)}}
+
+section{padding:56px 20px}
+.wrap{max-width:1120px;margin:0 auto}
+.kicker{color:var(--rojo);font:700 11.5px Inter;letter-spacing:.2em;text-transform:uppercase}
+h2{font-family:"Cormorant Garamond",serif;font-size:clamp(32px,6vw,46px);line-height:1.02;color:var(--azul);margin:8px 0 12px;font-weight:600}
+.lead{color:var(--gris);line-height:1.6;max-width:640px}
+
+/* beneficios */
+.beneficios{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:26px}
+.bf{background:#fff;border-radius:18px;padding:22px;border-left:4px solid var(--rojo);box-shadow:0 6px 24px rgba(13,42,92,.06);opacity:0;transform:translateY(20px);transition:.6s}
+.bf.vis{opacity:1;transform:none}
+.bf b{display:block;font-size:30px;color:var(--azul);font-family:"Cormorant Garamond",serif}
+.bf p{color:var(--gris);font-size:14px;line-height:1.5;margin-top:4px}
+.foto-tec{margin-top:24px;border-radius:20px;overflow:hidden;box-shadow:0 14px 40px rgba(13,42,92,.12)}
+
+/* catálogo */
+#catalogo{background:var(--acero)}
+.buscar{margin:22px 0 14px;position:relative}
+.buscar input{width:100%;border:0;border-radius:40px;padding:15px 20px;font:15px Inter;box-shadow:0 4px 16px rgba(13,42,92,.08);outline:none}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 10px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1.5px solid var(--azul);background:#fff;color:var(--azul);border-radius:30px;padding:9px 15px;font:600 13px Inter;cursor:pointer;transition:.2s}
+.chip.on{background:var(--azul);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin-top:10px}
+.card{background:#fff;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 6px 22px rgba(13,42,92,.07);transition:transform .3s,box-shadow .3s;animation:entra .5s both}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(13,42,92,.14)}
+@keyframes entra{from{opacity:0;transform:translateY(16px)}}
+.card .im{position:relative;aspect-ratio:16/10;overflow:hidden;background:#f3f4f6;cursor:zoom-in}
+.card .im img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.card:hover .im img{transform:scale(1.07)}
+.tag{position:absolute;left:12px;top:12px;background:var(--rojo);color:#fff;font:700 10.5px Inter;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:20px}
+.card .cx{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:17px;color:var(--azul);line-height:1.25}
+.card p{font-size:14px;color:var(--gris);line-height:1.5;flex:1}
+.card .acc{display:flex;gap:8px;margin-top:6px}
+.card .acc button{flex:1;border-radius:30px;padding:11px 10px;font:600 13px Inter;cursor:pointer;border:1.5px solid var(--azul);background:#fff;color:var(--azul);transition:.2s}
+.card .acc button.wa{background:var(--rojo);border-color:var(--rojo);color:#fff}
+.card .acc button.sel{background:var(--azul);color:#fff}
+.vacio{text-align:center;color:var(--gris);padding:30px}
+
+/* lista flotante */
+.flota{position:fixed;z-index:35;left:50%;bottom:16px;transform:translate(-50%,140%);transition:.4s cubic-bezier(.2,.9,.3,1.3);background:var(--azul);color:#fff;border-radius:40px;padding:8px 8px 8px 20px;display:flex;align-items:center;gap:14px;box-shadow:0 12px 34px rgba(0,0,0,.3);width:max-content;max-width:94vw}
+.flota.on{transform:translate(-50%,0)}
+.flota b{font-size:14px}
+.flota .btn{padding:11px 18px;font-size:14px}
+
+/* demo */
+.demo{position:relative;color:#fff;overflow:hidden}
+.demo .bg{position:absolute;inset:0}
+.demo .bg img{width:100%;height:100%;object-fit:cover}
+.demo .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,42,92,.95),rgba(13,42,92,.78))}
+.demo .wrap{position:relative}
+.demo h2{color:#fff}
+.demo .lead{color:rgba(255,255,255,.88)}
+form{display:grid;gap:12px;margin-top:22px;max-width:560px}
+form .dos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{font:600 12px Inter;letter-spacing:.06em;text-transform:uppercase;opacity:.9}
+input,select,textarea{width:100%;margin-top:6px;border:0;border-radius:12px;padding:13px 14px;font:15px Inter;color:var(--txt)}
+textarea{min-height:80px;resize:vertical}
+
+/* asesor */
+.asesor{display:grid;grid-template-columns:1fr;gap:20px;align-items:center}
+@media(min-width:820px){.asesor{grid-template-columns:1.1fr 1fr}}
+.asesor .foto{border-radius:22px;overflow:hidden;box-shadow:0 14px 40px rgba(13,42,92,.15)}
+.ficha{background:#fff;border-radius:22px;padding:26px;box-shadow:0 8px 30px rgba(13,42,92,.08)}
+.ficha .nom{font-family:"Cormorant Garamond",serif;font-size:34px;color:var(--azul);line-height:1}
+.ficha .emp{margin-top:6px;font-weight:700;letter-spacing:.14em;color:var(--rojo);font-size:13px}
+.ficha .tel{font-size:26px;font-weight:700;color:var(--azul);margin:16px 0;letter-spacing:.02em}
+.ficha .btns .btn{flex:1}
+
+footer{background:#0a1f45;color:rgba(255,255,255,.8);padding:34px 20px 100px;font-size:13px;line-height:1.7;text-align:center}
+footer b{color:#fff}
+.lic{display:inline-block;margin-top:12px;border:1px solid rgba(255,255,255,.3);border-radius:30px;padding:6px 14px;font-size:12px}
+.nota{opacity:.6;font-size:11.5px;margin-top:10px}
+
+/* aviso de vencimiento y bloqueo */
+.aviso{position:fixed;z-index:45;top:0;left:0;right:0;background:#ffcc00;color:#222;font:600 13px Inter;text-align:center;padding:8px 14px;display:none}
+.vencida{position:fixed;inset:0;z-index:100;background:linear-gradient(160deg,#0d2a5c,#0a1430);color:#fff;display:none;align-items:center;justify-content:center;padding:28px;text-align:center}
+.vencida .box{max-width:440px}
+.vencida h2{color:#fff}
+.vencida p{opacity:.88;line-height:1.6;margin:10px 0 22px}
+
+/* visor de foto */
+.visor{position:fixed;inset:0;z-index:60;background:rgba(5,12,28,.94);display:none;align-items:center;justify-content:center;padding:16px;cursor:zoom-out}
+.visor.on{display:flex}
+.visor img{max-height:90vh;border-radius:12px}
+
+.rev{opacity:0;transform:translateY(24px);transition:.7s}
+.rev.vis{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<div class="aviso" id="aviso"></div>
+
+<header id="hdr">
+  <div class="marca"><b>BETHEL GROUP</b><small data-t="dist">Distribuidor autorizado Royal Prestige</small></div>
+  <div class="lang"><button id="bES" class="on">ES</button><button id="bEN">EN</button></div>
+</header>
+
+<section class="hero" style="padding:0">
+  <div class="slide on"><img src="images/mesa.jpg" alt="Mesa servida con utensilios Royal Prestige"></div>
+  <div class="slide"><img src="images/cover.jpg" alt="Ollas y sartenes Royal Prestige"></div>
+  <div class="slide"><img src="images/sistemas.jpg" alt="Pastel cocinado en la estufa con Royal Prestige"></div>
+  <div class="slide"><img src="images/p15.jpg" alt="MultiPan Royal Prestige"></div>
+  <div class="hero-txt">
+    <span class="pill" data-t="pill">Demostración gratis a domicilio</span>
+    <h1 class="serif" data-t="h1">Cocina sin aceite, casi sin agua y con todo el sabor</h1>
+    <p data-t="hp">Sistemas de cocina en acero quirúrgico 316L para gas, eléctrica e inducción. Tus comidas se hacen en sus propios jugos y conservan los nutrientes.</p>
+    <div class="btns">
+      <a class="btn rojo" href="#demo" data-t="b1">Agendar demostración</a>
+      <a class="btn borde" href="#catalogo" data-t="b2">Ver catálogo</a>
+    </div>
+  </div>
+  <div class="dots" id="dots"></div>
+</section>
+
+<div class="cinta"><div id="cinta"></div></div>
+
+<section>
+  <div class="wrap">
+    <div class="kicker rev" data-t="k1">Por qué te va a encantar</div>
+    <h2 class="rev" data-t="t1">Más de 50 años en las cocinas de las familias</h2>
+    <p class="lead rev" data-t="l1">Royal Prestige es líder en utensilios de cocina. César te enseña en tu casa cómo cocinar más sano, más rápido y ahorrando gas.</p>
+    <div class="beneficios">
+      <div class="bf"><b data-t="bf1t">Acero 316L</b><p data-t="bf1">Acero quirúrgico en la superficie de cocción con núcleo de aluminio que reparte el calor parejo.</p></div>
+      <div class="bf"><b data-t="bf2t">Válvula Redi-Temp</b><p data-t="bf2">Silba para avisarte cuándo bajar el fuego. Ahorras energía y no se te quema nada.</p></div>
+      <div class="bf"><b data-t="bf3t">Aro Silicromático</b><p data-t="bf3">Sella con el vapor para cocinar con todavía menos grasa y agua.</p></div>
+      <div class="bf"><b data-t="bf4t">Garantía</b><p data-t="bf4">Garantía limitada de hasta 50 años según la línea. Pregunta por la de tu producto.</p></div>
+    </div>
+    <div class="foto-tec rev"><img src="images/tecnologia.jpg" alt="Capas y tecnología del sistema de cocina Royal Prestige" loading="lazy"></div>
+  </div>
+</section>
+
+<section id="catalogo">
+  <div class="wrap">
+    <div class="kicker" data-t="k2">Catálogo Colombia</div>
+    <h2 data-t="t2">Escoge lo que quieres para tu cocina</h2>
+    <p class="lead" data-t="l2">Marca los productos que te interesan y envía tu lista a César por WhatsApp. Te cotiza precio y planes de pago.</p>
+    <div class="buscar"><input id="q" type="search" placeholder="Buscar: olla de presión, licuadora, cuchillos..." data-tp="ph"></div>
+    <div class="chips" id="chips"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section class="demo" id="demo">
+  <div class="bg"><img src="images/mesa.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <div class="kicker" style="color:#ffb3bf" data-t="k3">Sin compromiso</div>
+    <h2 data-t="t3">Agenda tu demostración en casa</h2>
+    <p class="lead" data-t="l3">César va a tu casa, cocina contigo y te muestra la diferencia. Llena los datos y se envían a su WhatsApp.</p>
+    <form id="fDemo">
+      <div><label data-t="f1">Tu nombre</label><input id="dNom" required></div>
+      <div class="dos">
+        <div><label data-t="f2">Municipio / barrio</label><input id="dLug" required></div>
+        <div><label data-t="f3">Fecha que te sirve</label><input id="dFec" type="date" required></div>
+      </div>
+      <div class="dos">
+        <div><label data-t="f4">Hora</label>
+          <select id="dHor"><option data-t="h1o">Mañana</option><option data-t="h2o">Tarde</option><option data-t="h3o">Noche</option></select></div>
+        <div><label data-t="f5">Personas en casa</label><input id="dPer" type="number" min="1" value="4"></div>
+      </div>
+      <div><label data-t="f6">¿Qué te interesa?</label><textarea id="dInt" placeholder=""></textarea></div>
+      <button class="btn rojo" type="submit" data-t="f7">Enviar a César por WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="wrap asesor">
+    <div class="foto rev"><img src="images/cover.jpg" alt="Productos Royal Prestige" loading="lazy"></div>
+    <div class="ficha rev">
+      <div class="kicker" data-t="k4">Tu asesor</div>
+      <div class="nom">César Martínez Pico</div>
+      <div class="emp">BETHEL GROUP</div>
+      <div style="color:var(--gris);margin-top:4px" data-t="dist2">Distribuidor autorizado de Royal Prestige</div>
+      <div class="tel">314 524 2632</div>
+      <div class="btns">
+        <a class="btn rojo" id="waDirecto" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn azul" href="tel:+573145242632" data-t="llamar">Llamar</a>
+      </div>
+      <button class="btn blanco" style="margin-top:10px;width:100%;border:1.5px solid var(--azul)" id="bShare" data-t="share">Compartir esta app</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <b>Bethel Group</b> · César Martínez Pico · 314 524 2632<br>
+  <span data-t="foot">Distribuidor autorizado de Royal Prestige. Royal Prestige y sus marcas pertenecen a sus titulares. Garantías según términos del fabricante: www.royalprestige.com</span><br>
+  <span class="lic" id="lic"></span>
+  <div class="nota">App hecha por <b>Vibras Positivas HM</b> · 311 770 0431</div>
+</footer>
+
+<div class="flota" id="flota"><b id="flTxt"></b><button class="btn rojo" id="flEnv" data-t="env">Enviar lista</button></div>
+
+<div class="visor" id="visor"><img id="visorImg" alt=""></div>
+
+<div class="vencida" id="vencida">
+  <div class="box">
+    <div class="kicker" style="color:#ffb3bf">Vibras Positivas HM</div>
+    <h2 data-t="vt">Licencia de la app vencida</h2>
+    <p data-t="vp">El año de uso de esta app terminó. Para seguir mostrando el catálogo y recibiendo pedidos, renueva la licencia.</p>
+    <div class="btns" style="justify-content:center">
+      <a class="btn rojo" id="renovar" target="_blank" rel="noopener" data-t="vr">Renovar licencia</a>
+      <a class="btn borde" href="tel:+573145242632" data-t="vc">Llamar a César</a>
+    </div>
+  </div>
+</div>
+
+<script src="productos.js"></script>
+<script>
+// ===== Configuración =====
+const WA_CESAR = "573145242632";
+const WA_HAROLD = "573117700431";
+// Vigencia de la licencia: un año desde la entrega (hora de Colombia, UTC-5)
+const LICENCIA = { cliente: "Bethel Group · César Martínez Pico", inicio: "2026-11-06", fin: "2027-11-06" };
+
+// ===== Idioma =====
+const T = {
+ en:{dist:"Authorized Royal Prestige distributor",pill:"Free in-home demo",h1:"Cook without oil, almost no water and full flavor",
+  hp:"316L surgical-steel cookware for gas, electric and induction. Food cooks in its own juices and keeps its nutrients.",
+  b1:"Book a demo",b2:"See catalog",k1:"Why you'll love it",t1:"Over 50 years in family kitchens",
+  l1:"Royal Prestige leads the cookware market. César shows you at home how to cook healthier, faster and with less gas.",
+  bf1t:"316L steel",bf1:"Surgical steel cooking surface with an aluminum core that spreads heat evenly.",
+  bf2t:"Redi-Temp valve",bf2:"It whistles to tell you when to lower the heat. Save energy and never burn food.",
+  bf3t:"Silichromatic ring",bf3:"Seals with steam so you cook with even less fat and water.",
+  bf4t:"Warranty",bf4:"Limited warranty of up to 50 years depending on the line. Ask about yours.",
+  k2:"Colombia catalog",t2:"Pick what you want for your kitchen",l2:"Mark the products you like and send your list to César on WhatsApp. He'll quote price and payment plans.",
+  ph:"Search: pressure cooker, blender, knives...",k3:"No commitment",t3:"Book your in-home demo",
+  l3:"César comes to your home, cooks with you and shows you the difference. Fill in your details and they go to his WhatsApp.",
+  f1:"Your name",f2:"Town / neighborhood",f3:"Preferred date",f4:"Time",h1o:"Morning",h2o:"Afternoon",h3o:"Evening",f5:"People at home",
+  f6:"What are you interested in?",f7:"Send to César on WhatsApp",k4:"Your advisor",dist2:"Authorized Royal Prestige distributor",
+  llamar:"Call",share:"Share this app",foot:"Authorized Royal Prestige distributor. Royal Prestige and its trademarks belong to their owners. Warranty per manufacturer terms: www.royalprestige.com",
+  env:"Send list",vt:"App license expired",vp:"This app's one-year license has ended. Renew it to keep showing the catalog and receiving orders.",
+  vr:"Renew license",vc:"Call César",
+  pedir:"Ask on WhatsApp",agregar:"Add to list",agregado:"In my list",items:n=>n+(n==1?" product":" products"),vacio:"No products found.",
+  lic:f=>"License valid until "+f,avs:(d,f)=>"This app's license expires in "+d+" days ("+f+"). Renew with Vibras Positivas HM.",
+  cinta:["Free in-home demo","316L surgical steel","Induction ready","Cook without oil","Payment plans","Pressure cookers","Water filtration","Knives in German steel"]},
+ es:{items:n=>n+(n==1?" producto":" productos"),pedir:"Pedir por WhatsApp",agregar:"Agregar a lista",agregado:"En mi lista",vacio:"No encontramos productos con esa búsqueda.",
+  lic:f=>"Licencia de uso vigente hasta el "+f,avs:(d,f)=>"La licencia de esta app vence en "+d+" días ("+f+"). Renuévala con Vibras Positivas HM.",
+  cinta:["Demostración gratis a domicilio","Acero quirúrgico 316L","Apto para inducción","Cocina sin aceite","Planes de pago","Ollas de presión","Filtración de agua","Cuchillos en acero alemán"]}
+};
+let L = localStorage.getItem("bethel_lang") || "es";
+const ES = {};
+document.querySelectorAll("[data-t]").forEach(e=>ES[e.dataset.t]=e.textContent);
+const tx = k => (T[L][k] !== undefined ? T[L][k] : T.es[k] !== undefined ? T.es[k] : ES[k]);
+
+function aplicarIdioma(){
+  document.documentElement.lang = L;
+  document.querySelectorAll("[data-t]").forEach(e=>{const k=e.dataset.t; e.textContent = L==="en" && T.en[k]!==undefined ? T.en[k] : ES[k];});
+  document.getElementById("q").placeholder = L==="en" ? T.en.ph : "Buscar: olla de presión, licuadora, cuchillos...";
+  document.getElementById("dInt").placeholder = L==="en" ? "Ex: pressure cooker, 10-piece system" : "Ej: olla de presión, sistema de 10 piezas";
+  bES.classList.toggle("on",L==="es"); bEN.classList.toggle("on",L==="en");
+  const c = tx("cinta"); document.getElementById("cinta").innerHTML = [...c,...c].map(s=>"<span>"+s+"</span>").join("");
+  pintarChips(); pintar(); actualizarFlota(); licencia();
+}
+bES.onclick=()=>{L="es";localStorage.setItem("bethel_lang",L);aplicarIdioma()};
+bEN.onclick=()=>{L="en";localStorage.setItem("bethel_lang",L);aplicarIdioma()};
+
+// ===== Hero =====
+const slides=[...document.querySelectorAll(".slide")], dots=document.getElementById("dots");
+slides.forEach(()=>dots.appendChild(document.createElement("i")));
+let si=0; const marcar=()=>{slides.forEach((s,i)=>s.classList.toggle("on",i===si));[...dots.children].forEach((d,i)=>d.classList.toggle("on",i===si));};
+marcar(); setInterval(()=>{si=(si+1)%slides.length;marcar()},6000);
+addEventListener("scroll",()=>hdr.classList.toggle("solid",scrollY>60),{passive:true});
+
+// ===== Catálogo =====
+let cat="todos", lista=new Set(JSON.parse(localStorage.getItem("bethel_lista")||"[]"));
+const norm=s=>s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+function pintarChips(){
+  chips.innerHTML = CATS.map(c=>`<button class="chip ${c.id===cat?"on":""}" data-c="${c.id}">${c[L]}</button>`).join("");
+  chips.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{cat=b.dataset.c;pintarChips();pintar();});
+}
+function pintar(){
+  const q=norm(document.getElementById("q").value.trim());
+  const v=PRODUCTOS.filter(p=>(cat==="todos"||p.cat===cat)&&(!q||norm(p.es.n+" "+p.es.d+" "+p.en.n+" "+p.en.d).includes(q)));
+  grid.innerHTML = v.length? v.map((p,i)=>`
+   <article class="card" style="animation-delay:${Math.min(i,8)*50}ms">
+     <div class="im" data-img="images/${p.id}.jpg"><img src="images/${p.id}.jpg" alt="${p[L].n}" loading="lazy">${p.tag?`<span class="tag">${p.tag[L]}</span>`:""}</div>
+     <div class="cx"><h3>${p[L].n}</h3><p>${p[L].d}</p>
+       <div class="acc"><button class="wa" data-wa="${p.id}">${tx("pedir")}</button>
+       <button class="${lista.has(p.id)?"sel":""}" data-l="${p.id}">${lista.has(p.id)?tx("agregado"):tx("agregar")}</button></div></div>
+   </article>`).join("") : `<div class="vacio">${tx("vacio")}</div>`;
+  grid.querySelectorAll("[data-wa]").forEach(b=>b.onclick=()=>{const p=PRODUCTOS.find(x=>x.id===b.dataset.wa);
+    wa(WA_CESAR,(L==="en"?"Hi César, I saw it in the Bethel Group app and I'm interested in: ":"Hola César, lo vi en la app de Bethel Group y me interesa: ")+p[L].n+(L==="en"?". Could you give me price and payment plans?":". ¿Me das precio y planes de pago?"));});
+  grid.querySelectorAll("[data-l]").forEach(b=>b.onclick=()=>{const id=b.dataset.l;lista.has(id)?lista.delete(id):lista.add(id);
+    localStorage.setItem("bethel_lista",JSON.stringify([...lista]));pintar();actualizarFlota();});
+  grid.querySelectorAll(".im").forEach(d=>d.onclick=()=>{visorImg.src=d.dataset.img;visor.classList.add("on")});
+}
+document.getElementById("q").addEventListener("input",()=>{if(cat!=="todos"){cat="todos";pintarChips();}pintar();});
+visor.onclick=()=>visor.classList.remove("on");
+function actualizarFlota(){flTxt.textContent=tx("items")(lista.size);flota.classList.toggle("on",lista.size>0);}
+flEnv.onclick=()=>{const ns=[...lista].map(id=>"- "+PRODUCTOS.find(p=>p.id===id)[L].n).join("\n");
+  wa(WA_CESAR,(L==="en"?"Hi César, from the Bethel Group app. I'm interested in:\n":"Hola César, desde la app de Bethel Group. Me interesan:\n")+ns+(L==="en"?"\n\nPrice and payment plans, please.":"\n\n¿Me das precio y planes de pago?"));};
+
+// ===== Demostración =====
+fDemo.onsubmit=e=>{e.preventDefault();
+  const f=new Date(dFec.value+"T12:00:00").toLocaleDateString(L==="en"?"en-US":"es-CO",{weekday:"long",day:"numeric",month:"long"});
+  const m = L==="en"
+   ? `Hi César, I'd like a Royal Prestige demo at home.\nName: ${dNom.value}\nPlace: ${dLug.value}\nDate: ${f} (${dHor.value})\nPeople at home: ${dPer.value}\nInterested in: ${dInt.value||"-"}`
+   : `Hola César, quiero una demostración Royal Prestige en mi casa.\nNombre: ${dNom.value}\nLugar: ${dLug.value}\nFecha: ${f} (${dHor.value})\nPersonas en casa: ${dPer.value}\nMe interesa: ${dInt.value||"-"}`;
+  wa(WA_CESAR,m);};
+function wa(n,m){open("https://wa.me/"+n+"?text="+encodeURIComponent(m),"_blank");}
+waDirecto.href="https://wa.me/"+WA_CESAR+"?text="+encodeURIComponent("Hola César, vi la app de Bethel Group y quiero información de Royal Prestige.");
+bShare.onclick=async()=>{const d={title:"Bethel Group · Royal Prestige",text:"Catálogo Royal Prestige y demostración a domicilio con César Martínez Pico",url:location.href.split("#")[0]};
+  if(navigator.share){try{await navigator.share(d)}catch(e){}}else{wa("",d.text+" "+d.url);}};
+
+// fecha mínima del formulario = hoy en Colombia
+function hoyCO(){return new Date(Date.now()-5*3600e3).toISOString().slice(0,10);}
+dFec.min=hoyCO();
+
+// ===== Vigencia de la licencia (1 año) =====
+function licencia(){
+  const fin=new Date(LICENCIA.fin+"T23:59:59-05:00");
+  const fTxt=fin.toLocaleDateString(L==="en"?"en-US":"es-CO",{day:"numeric",month:"long",year:"numeric",timeZone:"America/Bogota"});
+  lic.textContent=tx("lic")(fTxt);
+  const dias=Math.ceil((fin-Date.now())/864e5);
+  renovar.href="https://wa.me/"+WA_HAROLD+"?text="+encodeURIComponent("Hola Harold, quiero renovar la licencia de la app de "+LICENCIA.cliente+" (vencía el "+LICENCIA.fin+").");
+  if(dias<=0){vencida.style.display="flex";document.body.style.overflow="hidden";}
+  else if(dias<=30){aviso.style.display="block";aviso.textContent=tx("avs")(dias,fTxt);hdr.style.top=aviso.offsetHeight+"px";}
+}
+
+// ===== Animaciones al hacer scroll =====
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("vis");io.unobserve(e.target);}}),{threshold:.15});
+document.querySelectorAll(".rev,.bf").forEach((e,i)=>{e.style.transitionDelay=(e.classList.contains("bf")?(i%4)*90:0)+"ms";io.observe(e);});
+
+aplicarIdioma();
+if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");
+</script>
+</body>
+</html>
